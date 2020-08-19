@@ -1,0 +1,189 @@
+body {
+	color: black;
+	
+	background-color: #e6fff9;
+	font-family: MV Boli;
+	font-size: medium;
+	margin: 0;
+	padding: 0;
+
+	}
+	
+
+/* this allows you to only apply this style to images inside the title div */
+#title img{
+	position: relative; 
+	top: -30x;
+	left: 20px;
+	}
+	
+#container {
+	background-color: #99ffff;
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+	background-image: url('https://lh3.googleusercontent.com/GFH4439S8TNKBjjqz8bXxm8_QUUjs1zUZ4kSIQEcs-E_daktkefzbRNxLAtbUD_nq7zGmQ=s85');
+	border-radius: 10px;
+	width: 768px;
+	margin: auto;
+	padding-top: 0px;
+    padding-bottom: 0px;
+	
+}
+		
+#content {
+    padding-top: 20px;
+}
+
+#header {
+	background-color: #9cf9f1;
+	padding-top: 10px;
+	margin: auto;
+	width: 768px;
+	height: 60px;
+    padding-top: 100px;
+
+}
+	
+/* Style the list */
+ul.breadcrumb {
+   list-style: square;
+   background-color: white;
+   padding-left: 130px;
+   padding-right: 0px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+
+
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 35px;
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: 000038;
+  text-decoration: boxed;
+  
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+h1 { 
+	position: relative; 
+	top: -30x;
+	left: -10px;
+
+}
+img {
+	position: relative;
+}
+#footer {
+	display: flex;
+	padding-top: 20px;
+	margin: auto;
+	font-size:85%;
+	font-weight: normal;
+	background-color: #9cf9f1;
+}
+
+#footer p {
+	left: 0;
+	bottom: 0;
+
+}
+#footer a{
+	padding: 0 2px 0 2px;
+	float: left;
+	right: 0;
+	bottom: 0;
+	
+}
+
+
+#footer-contact {
+	display: block;
+	float: right;
+}
+.boxed {
+	background-color: white;
+	height: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+	opacity: 75%;
+	
+
+}
+
+h3 {
+	font-size: 200%;
+	color: black; 
+}
+.navButton {
+	font-size: 100%;
+}
+
+#ButtonH {
+	background-color: Transparent; 
+	color: black; 
+	font-family: Mv Boli;
+	border: 2px solid black;
+	border-radius: 4px;
+	
+}
+#ButtonH:hover{
+    background-color: #adebeb;
+    color: black;
+}
+#ButtonS {
+	background-color: Transparent; 
+	color: black; 
+	font-family: Mv Boli;
+	border: 2px solid black;
+	border-radius: 4px;
+}
+
+#ButtonS:hover{
+    background-color: #adebeb;
+    color: black;
+}
+
+#ButtonA {
+	background-color: Transparent; 
+	color: black; 
+	font-family: Mv Boli;
+	border: 2px solid black;
+	border-radius: 4px;	
+}
+
+#ButtonA:hover{
+    background-color: #adebeb;
+    color: black;
+}
+#ButtonC {
+	background-color: Transparent; 
+	color: black; 
+	font-family: Mv Boli;
+	border: 2px solid black;
+	border-radius: 4px;	
+}
+
+#ButtonC:hover{
+    background-color: #adebeb;
+    color: black;
+}
+
+.transbox {
+	background-color: #ffffff;
+	opacity: 75%;
+	margin: 30px;
+	}

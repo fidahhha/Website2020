@@ -1,11 +1,12 @@
 body {
-	color: white;
+	color: black;
 	
-	background-color: white;
+	background-color: #e6fff9;
 	font-family: MV Boli;
-	font-size: small;
+	font-size: medium;
 	margin: 0;
 	padding: 0;
+
 	}
 	
 
@@ -18,30 +19,29 @@ body {
 	
 #container {
 	background-color: #99ffff;
-	background-image: url('https://lh3.googleusercontent.com/N_eZB0jLpnDWApfZbGFnYm8IoPt_LIOukKkoF32YEraRj1W7mDAZeKgbjAZGztL9CFUi=s85');
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+	background-image: url('https://lh3.googleusercontent.com/GFH4439S8TNKBjjqz8bXxm8_QUUjs1zUZ4kSIQEcs-E_daktkefzbRNxLAtbUD_nq7zGmQ=s85');
+	border-radius: 10px;
 	width: 768px;
 	margin: auto;
-	border-right: 1px solid black;
-	border-left: 1px solid black;
 	padding-top: 0px;
     padding-bottom: 0px;
-    
-	}
+	
+}
 		
 #content {
     padding-top: 20px;
 }
 
 #header {
-	background-color: #99ffff;
+	background-color: #9cf9f1;
 	padding-top: 10px;
 	margin: auto;
 	width: 768px;
 	height: 60px;
     padding-top: 100px;
 
-
-	}
+}
 	
 /* Style the list */
 ul.breadcrumb {
@@ -83,16 +83,15 @@ h1 {
 
 }
 img {
-  position: relative; 
+	position: relative;
 }
-
-
-	
 #footer {
-padding-top: 65px;
-margin: auto;
-font-size:85%;
-font-weight: normal;
+	display: flex;
+	padding-top: 20px;
+	margin: auto;
+	font-size:85%;
+	font-weight: normal;
+	background-color: #9cf9f1;
 }
 
 #footer p {
@@ -102,11 +101,16 @@ font-weight: normal;
 }
 #footer a{
 	padding: 0 2px 0 2px;
-	float: right;
+	float: left;
 	right: 0;
 	bottom: 0;
 	
-	
+}
+
+
+#footer-contact {
+	display: block;
+	float: right;
 }
 .boxed {
 	background-color: white;
@@ -177,3 +181,9 @@ h3 {
     background-color: #adebeb;
     color: black;
 }
+
+.transbox {
+	background-color: #ffffff;
+	opacity: 75%;
+	margin: 30px;
+	}

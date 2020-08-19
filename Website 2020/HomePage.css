@@ -1,7 +1,7 @@
 body {
 	color: black;
 	
-	background-color: #ccfff5;
+	background-color: #e6fff9;
 	font-family: MV Boli;
 	font-size: medium;
 	margin: 0;
@@ -34,7 +34,7 @@ body {
 }
 
 #header {
-	background-color: #99ffff;
+	background-color: #9cf9f1;
 	padding-top: 10px;
 	margin: auto;
 	width: 768px;
@@ -83,7 +83,7 @@ h1 {
 
 }
 img {
-	position: relative;
+	/*position: relative;*/
 }
 #footer {
 	display: flex;
@@ -91,7 +91,9 @@ img {
 	margin: auto;
 	font-size:85%;
 	font-weight: normal;
-	background-color: #99ffff;
+	background-color: #9cf9f1;
+    height: 80px;
+
 }
 
 #footer p {
@@ -106,11 +108,12 @@ img {
 	bottom: 0;
 	
 }
-#footer-icons {
-	text-align: center;
-	height: auto;
-}
 
+#footer-icon {
+	display: block; 
+	margin-left: auto;
+	margin-right: auto;
+}
 #footer-contact {
 	display: block;
 	float: right;
