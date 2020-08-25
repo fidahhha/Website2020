@@ -3,6 +3,19 @@ var ButtonS = document.getElementById("ButtonS");
 var ButtonA = document.getElementById("ButtonA");
 var ButtonC = document.getElementById("ButtonC");
 
+function toggleDropdown() {
+	document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+	if(!e.target.matches('.dropbtn')) {
+		var myDropdown = document.getElementById("myDropdown");
+		if(myDropdown.classList.contains('show')) {
+			myDropdown.classList.remove('show');
+		}
+	}
+}
+
 // adds a safety net
 try {
 	// Check if home button is pressed

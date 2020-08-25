@@ -21,7 +21,8 @@ table {
 	table-layout: fixed ;
 	border: 1px solid;
 	
-}	
+}
+
 thead{
 	padding-top: 12px;
 	padding-bottom: 12px;
@@ -33,6 +34,7 @@ thead{
 tbody {
 	background: rgba(255,255,255,0.6);
 }
+
 /* this allows you to only apply this style to images inside the title div */
 
 #container {
@@ -44,7 +46,6 @@ tbody {
 	margin: auto;
 	padding-top: 0px;
     padding-bottom: 0px;
-	
 }
 		
 #content {
@@ -166,6 +167,7 @@ h1 {
 	right: 0;
 	margin: 5px;
 }
+
 .boxed {
 	background-color: white;
 	height: 50px;
@@ -174,10 +176,61 @@ h1 {
     padding-top: 0px;
     padding-bottom: 0px;
 	opacity: 75%;
-	
 
 }
 
+.session-selector {
+	display: grid;
+}
+.session-selectorbar div {
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.dropbtn {
+cursor: pointer;
+font-size: 16px;  
+border: none;
+outline: none;
+color: black;
+padding: 14px 16px;
+background-color: white;
+font-family: inherit;
+margin: 0;
+}
+
+.session-selector button:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+background-color: #9cf9f1;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+
+.show {
+display: block;
+}
 h3 {
 	font-size: 200%;
 	color: black; 
