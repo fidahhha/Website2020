@@ -25,36 +25,93 @@
 					<center><h3>Sessions</h3></center>
 				</div>
 				<div  class="transbox">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum mollis odio, eu suscipit augue finibus tincidunt. 
-				Phasellus dapibus massa metus, non euismod magna ullamcorper vel. Vestibulum molestie non neque sit amet posuere. Fusce 
-				rhoncus sem placerat risus congue molestie. Pellentesque nisi nisi, scelerisque et eleifend eu, fringilla 
-				</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum mollis odio, eu suscipit augue finibus tincidunt. 
+					Phasellus dapibus massa metus, non euismod magna ullamcorper vel. Vestibulum molestie non neque sit amet posuere. Fusce 
+					rhoncus sem placerat risus congue molestie. Pellentesque nisi nisi, scelerisque et eleifend eu, fringilla 
+					</p>
 				</div>
-			<table class="table" style="height: 193px;" width="480">
-					<thead>
-						<tr>
-							<th>M</th> 
-							<th>T</th>
-							<th>W</th>
-							<th>TH</th>
-							<th>F</th>
-							<th>S</th>
-							<th>SUN</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-					
-					</tbody>
-			</table>
+				<table class="table" style="height: 193px;" width="480">
+						<thead>
+							<tr>
+								<th>M</th> 
+								<th>T</th>
+								<th>W</th>
+								<th>TH</th>
+								<th>F</th>
+								<th>S</th>
+								<th>SUN</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						
+						</tbody>
+				</table>
+				<div class="session-selector">
+					<h3>Sessions</h3>
+					<div class="day">
+						<button class="dropbtn" onclick="toggleDropdown()">
+							Day
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content" id="dayDropdown">
+							<a href="#">Monday</a>
+							<a href="#">Tuesday</a>
+							<a href="#">Wednesday</a>
+							<a href="#">Thursday</a>
+							<a href="#">Friday</a>
+							<a href="#">Saturday</a>
+							<a href="#">Sunday</a>
+						</div>
+					</div>
+					<div class="month">
+						<button class="dropbtn" onclick="toggleDropdown()">
+							Month
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content" id="monthDropdown">
+							<a href="#">January</a>
+							<a href="#">Febuary</a>
+							<a href="#">March</a>
+							<a href="#">April</a>
+							<a href="#">May</a>
+							<a href="#">June</a>
+							<a href="#">July</a>
+							<a href="#">August</a>
+							<a href="#">September</a>
+							<a href="#">October</a>
+							<a href="#">November</a>
+							<a href="#">December</a>
+						</div>
+					</div>
+					<div class="time">
+						<button class="dropbtn" onclick="toggleDropdown()">
+							Time
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content" id="timeDropdown">
+							
+						</div>
+					</div>
+					<div class="time-of-day">
+						<button class="dropbtn" onclick="toggleDropdown()">
+							AM/PM
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content" id="t-of-dayDropdown">
+							<a href="#">AM</a>
+							<a href="#">PM</a>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div id="footer">
 				<div id="footer-icon">
