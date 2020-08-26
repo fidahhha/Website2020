@@ -1,64 +1,70 @@
 <!DOCTYPE html>
 <html>
-	<head> 
-		<title>Ashleigh PT</title>
-		<link rel='stylesheet' href='Sessions.css' title='style1' media='screen' />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<meta name="Author" content="Fidah Ali">
-		<meta name="Description" content="Ashleigh Curtis personal traininig page">
-		<meta name="Keyboard" content="Ashleigh, Curtis, Personal, Trainig, PT">
-		
-	<body>
-		<div id="container">
-			<div id="title"></div>
-			<div id="header">
+
+<head>
+	<title>Ashleigh PT</title>
+	<link rel='stylesheet' href='Sessions.css' title='style1' media='screen' />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="Author" content="Fidah Ali">
+	<meta name="Description" content="Ashleigh Curtis personal traininig page">
+	<meta name="Keyboard" content="Ashleigh, Curtis, Personal, Trainig, PT">
+
+<body>
+	<div id="container">
+		<div id="title"></div>
+		<div id="header">
 			<img src="Images/Mylogo.png" width="240" height="200" alt="Logo" />
-				<ul class="breadcrumb">
-				  <li><button class="navButton" id = "ButtonH">Home</button></li>
-				  <li><button class="navButton" id = "ButtonS">Sessions</button></li>
-				  <li><button class="navButton" id = "ButtonA">About</button></li>
-				  <li><button class="navButton" id = "ButtonC">Contact</button></li>
-				</ul>
-			</div> 
-			<div id="content">
-				<div class="boxed">
-					<center><h3>Sessions</h3></center>
-				</div>
-				<div  class="transbox">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum mollis odio, eu suscipit augue finibus tincidunt. 
-					Phasellus dapibus massa metus, non euismod magna ullamcorper vel. Vestibulum molestie non neque sit amet posuere. Fusce 
-					rhoncus sem placerat risus congue molestie. Pellentesque nisi nisi, scelerisque et eleifend eu, fringilla 
-					</p>
-				</div>
-				<table class="table" style="height: 193px;" width="480">
-						<thead>
-							<tr>
-								<th>M</th> 
-								<th>T</th>
-								<th>W</th>
-								<th>TH</th>
-								<th>F</th>
-								<th>S</th>
-								<th>SUN</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-						
-						</tbody>
-				</table>
-				<div class="session-selector">
+			<ul class="breadcrumb">
+				<li><button class="navButton" id="ButtonH">Home</button></li>
+				<li><button class="navButton" id="ButtonS">Sessions</button></li>
+				<li><button class="navButton" id="ButtonA">About</button></li>
+				<li><button class="navButton" id="ButtonC">Contact</button></li>
+			</ul>
+		</div>
+		<div id="content">
+			<div class="boxed">
+				<center>
 					<h3>Sessions</h3>
+				</center>
+			</div>
+			<div class="transbox">
+
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis non culpa accusantium hic autem
+					est, perferendis, officia ad maxime quisquam aut voluptate accusamus excepturi a error nesciunt
+					minus. Commodi asperiores delectus ipsam itaque qui illum explicabo, molestias saepe dolorum fuga
+					magnam, esse mollitia impedit deleniti natus debitis excepturi facilis quibusdam.
+				</p>
+			</div>
+			<table class="table" style="height: 193px;" width="480">
+				<thead>
+					<tr>
+						<th>M</th>
+						<th>T</th>
+						<th>W</th>
+						<th>TH</th>
+						<th>F</th>
+						<th>S</th>
+						<th>SUN</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+
+				</tbody>
+			</table>
+			<div class="session-selector">
+				<h3 class="session-title">Sessions</h3>
+				<div class="session-selectorbar">
 					<div class="day">
-						<button class="dropbtn" onclick="toggleDropdown()">
+						<button class="dropbtn" id="btnDay">
 							Day
 							<i class="fa fa-caret-down"></i>
 						</button>
@@ -73,7 +79,7 @@
 						</div>
 					</div>
 					<div class="month">
-						<button class="dropbtn" onclick="toggleDropdown()">
+						<button class="dropbtn" id="btnMonth">
 							Month
 							<i class="fa fa-caret-down"></i>
 						</button>
@@ -93,48 +99,50 @@
 						</div>
 					</div>
 					<div class="time">
-						<button class="dropbtn" onclick="toggleDropdown()">
+						<button class="dropbtn" id="btnTime">
 							Time
 							<i class="fa fa-caret-down"></i>
 						</button>
 						<div class="dropdown-content" id="timeDropdown">
-							
+
 						</div>
 					</div>
 					<div class="time-of-day">
-						<button class="dropbtn" onclick="toggleDropdown()">
+						<button class="dropbtn" id="btnTimeOfDay">
 							AM/PM
 							<i class="fa fa-caret-down"></i>
 						</button>
-						<div class="dropdown-content" id="t-of-dayDropdown">
+						<div class="dropdown-content" id="time-of-dayDropdown">
 							<a href="#">AM</a>
 							<a href="#">PM</a>
 						</div>
 					</div>
 				</div>
+
 			</div>
-			<div id="footer">
-				<div id="footer-icon">
-					<!-- <a href="https://m.facebook.com" target="_blank"><img src="Images/Instagram.png" width="20" height="20" alt="Instagram" /> </a>
+		</div>
+		<div id="footer">
+			<div id="footer-icon">
+				<!-- <a href="https://m.facebook.com" target="_blank"><img src="Images/Instagram.png" width="20" height="20" alt="Instagram" /> </a>
 					<a href="https://pinterest.com" target="_blank"><img src="Images/Facebook.png" width="25" height="25" alt="Facebook" /> </a> -->
-					<a href="https://www.instagram.com/" target = "blank"><i class="fa fa-instagram"></i></a>
-					<a href="https://m.facebook.com" target = "blank"><i class="fa fa-facebook"></i></a>
-				</div>	
-				<div id = "footer-contact">
-					<div id = "contact">
-						<a><i class="fa fa-phone"></i> ##############</a>
-					</div>
-					<div id = "email">
-						<a><i class="fa fa-envelope"></i> ashleighcurtis98@gmail.com </a>
-						
-					</div>
+				<a href="https://www.instagram.com/" target="blank"><i class="fa fa-instagram"></i></a>
+				<a href="https://m.facebook.com" target="blank"><i class="fa fa-facebook"></i></a>
+			</div>
+			<div id="footer-contact">
+				<div id="contact">
+					<a><i class="fa fa-phone"></i> ##############</a>
+				</div>
+				<div id="email">
+					<a><i class="fa fa-envelope"></i> ashleighcurtis98@gmail.com </a>
+
 				</div>
 			</div>
 		</div>
-		<footer>
-			
-		</footer>
-	</body>
-	<script src="main.js"></script>
-</html>
+	</div>
+	<footer>
 
+	</footer>
+</body>
+<script src="main.js"></script>
+
+</html>
