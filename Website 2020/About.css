@@ -43,6 +43,29 @@ body {
 	margin-left: 270px;
 }
 
+.picContent img{
+    width: 160px;
+    height: 290px;
+    padding-left: 20px;
+}
+.picContent p{
+	padding-left: 40px;
+	font-size: 30px;
+}
+
+.boxed1 {
+	background-color: white;
+	height: 50px;
+	width: 300px;
+	margin-right: 40px;
+	margin-left:20px;
+	padding-top: 1px;
+	padding-bottom: 50px;
+	opacity: 75%;
+	
+
+}
+
 /* Style the list */
 ul.breadcrumb {
 	list-style: square;

@@ -42,7 +42,7 @@ body {
 	text-align: center;
 	margin-left: 270px;
 }
-	
+
 /* Style the list */
 ul.breadcrumb {
    list-style: square;
@@ -151,6 +151,7 @@ h1 {
     padding-top: 0px;
     padding-bottom: 0px;
 	opacity: 75%;
+	width: 200px;
 	
 
 }
@@ -158,6 +159,7 @@ h1 {
 h3 {
 	font-size: 200%;
 	color: black; 
+	
 }
 .navButton {
 	font-size: 100%;
@@ -218,3 +220,61 @@ h3 {
 	opacity: 75%;
 	margin: 30px;
 	}
+	
+	
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#message {
+	height: 80px;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 400px;
+	padding-top: 0px;
+}
+
+#fname {
+	width: 250px;
+	margin-left: 20px;
+	margin-right: 20px;
+
+}
+
+#lname {
+	width: 250px;
+	margin-left: 20px;
+	margin-right: 20px;
+
+}
+input[type=submit] {
+  width: 52%;
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+input[type=submit]:hover {
+  background-color: #9cf9f1;
+
+
+}
+
+/*div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}*/

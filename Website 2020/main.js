@@ -15,7 +15,26 @@ var dayDropdown = document.getElementById("dayDropdown");
 var monthDropdown = document.getElementById("monthDropdown");
 var timeDropdown = document.getElementById("timeDropdown");
 var timeOfDayDropdown = document.getElementById("time-of-dayDropdown");
-
+if (ButtonH) {
+		ButtonH.onclick = ButtonH.addEventListener('click', function () {
+			location.replace("HomePage.html")
+		});
+	}
+	if (ButtonS) {
+		ButtonS.onclick = ButtonS.addEventListener('click', function () {
+			location.replace("Sessions.html")
+		});
+	}
+	if (ButtonA) {
+		ButtonA.onclick = ButtonA.addEventListener('click', function () {
+			location.replace("About.html")
+		});
+	}
+	if (ButtonC) {
+		ButtonC.onclick = ButtonC.addEventListener('click', function () {
+			location.replace("Contact.html")
+		});
+	}
 var btnArray = new Array(
 	btnDay, btnMonth, btnTime, btnTimeOfDay
 );
@@ -55,26 +74,7 @@ window.onclick = function (e) {
 // adds a safety net
 try {
 	// Check if home button is pressed
-	if (ButtonH) {
-		ButtonH.onclick = ButtonH.addEventListener('click', function () {
-			location.replace("HomePage.html")
-		});
-	}
-	if (ButtonS) {
-		ButtonS.onclick = ButtonS.addEventListener('click', function () {
-			location.replace("Sessions.html")
-		});
-	}
-	if (ButtonA) {
-		ButtonA.onclick = ButtonA.addEventListener('click', function () {
-			location.replace("About.html")
-		});
-	}
-	if (ButtonC) {
-		ButtonC.onclick = ButtonC.addEventListener('click', function () {
-			location.replace("Contact.html")
-		});
-	}
+	
 } catch (ex) {
 	console.error(ex);
 }
