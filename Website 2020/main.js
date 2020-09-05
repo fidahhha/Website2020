@@ -9,32 +9,35 @@ var btnDay = document.getElementById("btnDay");
 var btnMonth = document.getElementById("btnMonth");
 var btnTime = document.getElementById("btnTime");
 var btnTimeOfDay = document.getElementById("btnTimeOfDay");
+var btnDate = document.getElementById("btnDate");
 
 // dropdown variables
 var dayDropdown = document.getElementById("dayDropdown");
 var monthDropdown = document.getElementById("monthDropdown");
 var timeDropdown = document.getElementById("timeDropdown");
 var timeOfDayDropdown = document.getElementById("time-of-dayDropdown");
+var dateDropdown = document.getElementById("dateDropdown");
+
 if (ButtonH) {
-		ButtonH.onclick = ButtonH.addEventListener('click', function () {
-			location.replace("HomePage.html")
-		});
-	}
-	if (ButtonS) {
-		ButtonS.onclick = ButtonS.addEventListener('click', function () {
-			location.replace("Sessions.html")
-		});
-	}
-	if (ButtonA) {
-		ButtonA.onclick = ButtonA.addEventListener('click', function () {
-			location.replace("About.html")
-		});
-	}
-	if (ButtonC) {
-		ButtonC.onclick = ButtonC.addEventListener('click', function () {
-			location.replace("Contact.html")
-		});
-	}
+	ButtonH.onclick = ButtonH.addEventListener('click', function () {
+		location.replace("HomePage.html")
+	});
+}
+if (ButtonS) {
+	ButtonS.onclick = ButtonS.addEventListener('click', function () {
+		location.replace("Sessions.html")
+	});
+}
+if (ButtonA) {
+	ButtonA.onclick = ButtonA.addEventListener('click', function () {
+		location.replace("About.html")
+	});
+}
+if (ButtonC) {
+	ButtonC.onclick = ButtonC.addEventListener('click', function () {
+		location.replace("Contact.html")
+	});
+}
 var btnArray = new Array(
 	btnDay, btnMonth, btnTime, btnTimeOfDay
 );
@@ -54,6 +57,9 @@ btnTime.onclick = function () {
 }
 btnTimeOfDay.onclick = function () {
 	timeOfDayDropdown.classList.toggle("show");
+}
+btnDate.onclick = function () {
+	dateDropdown.classList.toggle("show");
 }
 
 window.onclick = function (e) {

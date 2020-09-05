@@ -3,6 +3,13 @@
 
 <head>
 	<title>Ashleigh PT</title>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+            integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+            crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+            crossorigin=""></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel='stylesheet' href='Sessions.css' title='style1' media='screen' />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta name="Author" content="Fidah Ali">
@@ -60,78 +67,119 @@
 
 				</tbody>
 			</table>
-			<div class="session-selector">
-				<h3 class="session-title">Sessions</h3>
-				<div class="session-selectorbar">
-					<div class="day">
-						<button class="dropbtn" id="btnDay">
-							Day
-							<i class="fa fa-caret-down"></i>
-						</button>
-						<div class="dropdown-content" id="dayDropdown">
-							<a href="#">Monday</a>
-							<a href="#">Tuesday</a>
-							<a href="#">Wednesday</a>
-							<a href="#">Thursday</a>
-							<a href="#">Friday</a>
-							<a href="#">Saturday</a>
-							<a href="#">Sunday</a>
+			<div class="boxed2">
+				<div class="session-selector">
+					<h3 class="session-title">Sessions</h3>
+					<div class="session-selectorbar">
+						<div class="day">
+							<button class="dropbtn" id="btnDay">
+								Day
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<div class="dropdown-content" id="dayDropdown">
+								<a href="#">Monday</a>
+								<a href="#">Tuesday</a>
+								<a href="#">Wednesday</a>
+								<a href="#">Thursday</a>
+								<a href="#">Friday</a>
+								<a href="#">Saturday</a>
+								<a href="#">Sunday</a>
+							</div>
 						</div>
-					</div>
-					<div class="month">
-						<button class="dropbtn" id="btnMonth">
-							Month
-							<i class="fa fa-caret-down"></i>
-						</button>
-						<div class="dropdown-content" id="monthDropdown">
-							<a href="#">January</a>
-							<a href="#">Febuary</a>
-							<a href="#">March</a>
-							<a href="#">April</a>
-							<a href="#">May</a>
-							<a href="#">June</a>
-							<a href="#">July</a>
-							<a href="#">August</a>
-							<a href="#">September</a>
-							<a href="#">October</a>
-							<a href="#">November</a>
-							<a href="#">December</a>
+						<div class="month">
+							<button class="dropbtn" id="btnMonth">
+								Month
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<div class="dropdown-content" id="monthDropdown">
+								<a href="#">January</a>
+								<a href="#">Febuary</a>
+								<a href="#">March</a>
+								<a href="#">April</a>
+								<a href="#">May</a>
+								<a href="#">June</a>
+								<a href="#">July</a>
+								<a href="#">August</a>
+								<a href="#">September</a>
+								<a href="#">October</a>
+								<a href="#">November</a>
+								<a href="#">December</a>
+							</div>
 						</div>
-					</div>
-					<div class="time">
-						<button class="dropbtn" id="btnTime">
-							Time
-							<i class="fa fa-caret-down"></i>
-						</button>
-						<div class="dropdown-content" id="timeDropdown">
-							<a href="#">1</a>
-							<a href="#">2</a>
-							<a href="#">3</a>
-							<a href="#">4</a>
-							<a href="#">5</a>
-							<a href="#">6</a>
-							<a href="#">7</a>
-							<a href="#">8</a>
-							<a href="#">9</a>
-							<a href="#">10</a>
-							<a href="#">11</a>
-							<a href="#">12</a>
+						<div class="Date">
+							<button class="dropbtn" id="btnDate">
+								Date
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<div class="dropdown-content" id="dateDropdown">
+								<a href="#">1</a>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#">4</a>
+								<a href="#">5</a>
+								<a href="#">6</a>
+								<a href="#">7</a>
+								<a href="#">8</a>
+								<a href="#">9</a>
+								<a href="#">10</a>
+								<a href="#">11</a>
+								<a href="#">12</a>
+								<a href="#">13</a>
+								<a href="#">14</a>
+								<a href="#">15</a>
+								<a href="#">16</a>
+								<a href="#">17</a>
+								<a href="#">18</a>
+								<a href="#">19</a>
+								<a href="#">20</a>
+								<a href="#">21</a>
+								<a href="#">22</a>
+								<a href="#">23</a>
+								<a href="#">24</a>
+								<a href="#">25</a>
+								<a href="#">26</a>
+								<a href="#">27</a>
+								<a href="#">28</a>
+								<a href="#">29</a>
+								<a href="#">30</a>
+								<a href="#">31</a>
+
+							</div>
 						</div>
-					</div>
-					<div class="time-of-day">
-						<button class="dropbtn" id="btnTimeOfDay">
-							AM/PM
-							<i class="fa fa-caret-down"></i>
-						</button>
-						<div class="dropdown-content" id="time-of-dayDropdown">
-							<a href="#">AM</a>
-							<a href="#">PM</a>
+						<div class="time">
+							<button class="dropbtn" id="btnTime">
+								Time
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<div class="dropdown-content" id="timeDropdown">
+								<a href="#">1</a>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#">4</a>
+								<a href="#">5</a>
+								<a href="#">6</a>
+								<a href="#">7</a>
+								<a href="#">8</a>
+								<a href="#">9</a>
+								<a href="#">10</a>
+								<a href="#">11</a>
+								<a href="#">12</a>
+							</div>
+						</div>
+						<div class="time-of-day">
+							<button class="dropbtn" id="btnTimeOfDay">
+								AM/PM
+								<i class="fa fa-caret-down"></i>
+							</button>
+							<div class="dropdown-content" id="time-of-dayDropdown">
+								<a href="#">AM</a>
+								<a href="#">PM</a>
+							</div>
 						</div>
 					</div>
 				</div>
-
 			</div>
-		</div>
+		<div id="map-container"></div>
 		<div id="footer">
 			<div id="footer-icon">
 				<!-- <a href="https://m.facebook.com" target="_blank"><img src="Images/Instagram.png" width="20" height="20" alt="Instagram" /> </a>
@@ -155,5 +203,6 @@
 	</footer>
 </body>
 <script src="main.js"></script>
+<script src="map.js"></script>
 
 </html>

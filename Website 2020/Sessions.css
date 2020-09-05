@@ -20,9 +20,16 @@ table {
 	margin-right: auto;
 	table-layout: fixed;
 	border: 1px solid;
+	border-radius:5px;
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+	
 
 }
+th, td {
+	border: 1px solid;
+	border-color:#a4c1c1;
 
+}
 thead {
 	padding-top: 12px;
 	padding-bottom: 12px;
@@ -33,6 +40,7 @@ thead {
 
 tbody {
 	background: rgba(255, 255, 255, 0.6);
+	
 }
 
 /* this allows you to only apply this style to images inside the title div */
@@ -41,6 +49,8 @@ tbody {
 	background-color: #99ffff;
 	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 	background-image: url('Images/Background.png');
+	background-repeat: repeat;
+	background-size: 150px 150px;
 	border-radius: 10px;
 	width: 768px;
 	margin: auto;
@@ -67,6 +77,11 @@ tbody {
 	margin-left: 270px;
 }
 
+#map-container {
+	height: 180px;
+	margin: 1em;
+	
+}
 /* Style the list */
 ul.breadcrumb {
 	list-style: square;
@@ -184,16 +199,22 @@ h1 {
 .session-selector {
 	display: grid;
 	grid-template-columns: 20% 80%;
+	
 }
 
 .session-selectorbar {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: 108px 108px 108px 108px 108px;
+	align-content: center;
+	
+	justify-content: center;
+	
 }
 
 .session-title {
 	background-color: white;
 	text-align: center;
+	margin-left: 10px;
 }
 
 .session-selectorbar div {
@@ -202,11 +223,11 @@ h1 {
 	align-items: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	
 }
 
 .dropbtn {
 	cursor: pointer;
-	font-size: 16px;
 	border: none;
 	outline: none;
 	color: black;
@@ -214,6 +235,8 @@ h1 {
 	background-color: white;
 	font-family: inherit;
 	margin: 0;
+    width: 120px;
+	font-size: 15px;
 }
 
 .session-selectorbar button:hover,
@@ -253,6 +276,9 @@ h1 {
 h3 {
 	font-size: 200%;
 	color: black;
+	border-radius:5px;
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+	
 }
 
 .navButton {
@@ -315,7 +341,19 @@ h3 {
 .transbox {
 	background-color: #ffffff;
 	opacity: 75%;
+	border-radius:5px;
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
 	margin: 30px;
-}
+	padding-left: 20px;
+	}
 
-.table {}
+.boxed2 {
+	background-color: white;
+	opacity: 75%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-left: 10px;
+	margin-right: 10px;
+	position: relative;
+	z-index: 10000;
+}
